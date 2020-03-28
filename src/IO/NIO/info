@@ -1,0 +1,16 @@
+NIO provide the way to make IO operations via buffer 
+and channel while tradition IO via streams(using native
+methods). It is a faster way.
+To learn:
+http://blog.csdn.net/a953713428/article/details/64907250
+http://blog.csdn.net/zcw4237256/article/details/78625193
+
+2018/4/10:
+In NIO, the class Files integrate comprehensive facilities 
+in IO operations.
+
+Two ways to handle IO affairs via NIO introduced in channelDemo
+and mapChannelDemo, and other verbose operations using Files
+ready to replace old IO operations in other files, are in 
+this package.
+

@@ -1,0 +1,52 @@
+This package includes several classes about input and
+output from external file or console.
+
+IT IS CRUCIAL THAT IN MACOS CONTENTS IN FILE IS INVISABLE
+TO SYSTEM BUT FOR JAVA PROGRAMS(NOT EVEN JAVA EDITORS
+
+Some special and more functional classes are 
+written independently in this package. They are:
+
+/****
+File(set files and directories, fundamental)
+RandomAccessFile(can adjust pointer, used with File)
+Scanner(able to input and output data from console and
+        external file and can divide file into parts
+        like StringTokenizer)
+  **ALL read and write kernal processes are native**
+FileReader, FileWriter(Write as RandomAFile do but  
+                       independent from File. No seek  
+                       as RAF. Not support mark.)
+BufferedReader, BufferedWriter(support mark.)
+****/
+
+Others do not show many distinctions. They are mostly
+introduced in otherIOoperation.java which are:
+
+/****
+FileInputStream FileOutputStream(FileReader&FileWriter
+                                 have extended those)
+ByteArrayInputStream ByteArrayOutputStream
+BufferedInputStream BufferedOutputStream(faster)
+SequenceInputStream(can link several InputStream)
+
+They equally extend InputStream or OutputStream. 
+Streams can invoke external files(so does File), which
+(the function)is given by File.
+
+CharArrayReader(read char[] to vars, unable to file)
+StringReader(all these readers extend Reader as 
+             FileReader do)
+...****/
+
+The IO operations are highly organic and powerful, 
+normally few of them is enough to be used in a project.
+
+About delimitation :
+Readers use LF as the only delimiter when invoking
+  nextLine(cannot set delimiters).
+Scanner and StringTokenizer use space and LF.
+RAF use only LF(cannot set delimiters) 
+
+
+
